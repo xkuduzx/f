@@ -10,24 +10,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
     <style>
         input::placeholder{
             font-size: 0.8rem;
         }
+
+        /* Enable scrolling for select elements */
+        select {
+            max-height: 150px; /* Maximum height for the dropdown */
+            overflow-y: auto;  /* Enables vertical scrolling */
+        }
     </style>
-  </head>
-  <body class="flex flex-col bg-[#050C20] font-['Roboto']">
+</head>
+<body class="flex flex-col bg-[#050C20] font-['Roboto']">
     <div class="py-5 px-5 bg-[#011323] flex items-center gap-2 rounded-b-xl">
-        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 7l-5 5l5 5"/></svg></a>
+        <a href="javascript:history.back()"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 7l-5 5l5 5"/></svg></a>
         <h2 class="text-white text-lg font-semibold">Sipariş Özeti</h2>
     </div>
     <div class="px-5 py-3">
     <div class="bg-[#010B2D] rounded-lg p-3">
         <div class="flex items-start gap-2">
-            <img class="w-4/12 rounded-lg" src="./view/img/Elmas(44).png" alt="">
+            <img class="w-4/12 rounded-lg" src="./view/img/Elmas(44).png" alt="Elmas Görseli">
             <div>
                 <h3 class="text-white font-light">Mobile Legends: Bang Bang</h3>
                 <p class="text-white font-bold">44 Elmas</p>
@@ -37,7 +43,7 @@
                         <input type="number" class="focus:outline-none text-white bg-inherit w-5 text-center sonuc" value="1" min="1">
                         <button type=button onclick="degistir(this)" class="arttir"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg></button>
                     </div>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z"/></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z"/></svg></a>
                 </div>
             </div>
         </div>
@@ -56,14 +62,14 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24"><path fill="currentColor" d="M11.5 1L2 6v2h19V6m-5 4v7h3v-7M2 22h19v-3H2m8-9v7h3v-7m-9 0v7h3v-7z"/></svg>
                     <span>EFT/Havale</span>
                 </div>
-                <input type="radio" name="" id="">
+                <input type="radio" name="paymentMethod" id="eft">
             </div>  
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2 text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 512 512"><path fill="currentColor" d="M32 376a56 56 0 0 0 56 56h336a56 56 0 0 0 56-56V222H32Zm66-76a30 30 0 0 1 30-30h48a30 30 0 0 1 30 30v20a30 30 0 0 1-30 30h-48a30 30 0 0 1-30-30ZM424 80H88a56 56 0 0 0-56 56v26h448v-26a56 56 0 0 0-56-56"/></svg>
                     <span>Kart</span>
                 </div>
-                <input type="radio" name="" id="">
+                <input type="radio" name="paymentMethod" id="card">
             </div>  
         </div>
     </div>
@@ -82,8 +88,8 @@
             <div class="">
               <h6 class="text-sm">Kart Numarası</h6>
               <div class="border py-2 w-full px-3 bg-gray-100 rounded-lg mt-1 flex items-center justify-between">
-                <input type="text" name="" id="" class=" focus:outline-none bg-inherit w-full" placeholder="12 Haneli Kart Numarasını Girin" />
-                <img src="./view/img/master.png" alt="">
+                <input type="text" name="" id="" class="focus:outline-none bg-inherit w-full" placeholder="12 Haneli Kart Numarasını Girin" />
+                <img src="./view/img/master.png" alt="Mastercard Logo">
               </div>
             </div>
             <div class="flex items-center justify-between">
@@ -100,9 +106,18 @@
                         <option value="">6</option>
                         <option value="">7</option>
                         <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
                       </select>
                       <select name="Ay" id="" class="border py-2 px-3 bg-gray-100 rounded-lg">
                         <option value="" selected disabled>Yıl</option>
+                        <option value="">2034</option>
+                        <option value="">2033</option>
+                        <option value="">2032</option>
+                        <option value="">2031</option>
+                        <option value="">2030</option>
                         <option value="">2029</option>
                         <option value="">2028</option>
                         <option value="">2027</option>
@@ -133,6 +148,17 @@
         </div>
       </div>
     <script src="./view/js/jquery.min.js"></script>
+	<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./view/js/main.js"></script>
+
+
+    <script>
+      $(document).ready(function() {
+        $('input[type="radio"]').on('change', function() {
+            $('input[type="radio"]').not(this).prop('checked', false);
+        });
+      });
+    </script>
 </body>
 </html>
