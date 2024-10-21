@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="./view/css/style.css" />
+    <link rel="stylesheet" href="./view/css/default.css" />
+    <link rel="stylesheet" href="./view/css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        input::placeholder{
+            color:white;
+        }
+    </style>
+  </head>
+  <body class="flex flex-col bg-[#050C20] font-['Roboto']">
+    <header class="fixed bottom-0 w-full bg-[#010101] py-3 px-6 z-[999999]">
+        <ul class="flex items-center justify-between">
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-[#AD6108] mx-auto w-5 h-5 mb-1" viewBox="0 0 32 32"><path fill="currentColor" d="M13.895 2.777a3.25 3.25 0 0 1 4.21 0l9.75 8.287A3.25 3.25 0 0 1 29 13.54V26.5a2.5 2.5 0 0 1-2.5 2.5h-4a2.5 2.5 0 0 1-2.5-2.5V20a2 2 0 0 0-1.991-2H13.99A2 2 0 0 0 12 20v6.5A2.5 2.5 0 0 1 9.5 29h-4A2.5 2.5 0 0 1 3 26.5V13.54a3.25 3.25 0 0 1 1.145-2.476z"/></svg>
+              <p class="text-[#AD6108] font-semibold text-sm">Anasayfa</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white mx-auto w-5 h-5 mb-1" viewBox="0 0 20 20"><path fill="currentColor" d="M15.9 5.5C15.3 4.5 14.2 4 13 4H7c-1.2 0-2.3.5-2.9 1.5c-2.3 3.5-2.8 8.8-1.2 9.9c1.6 1.1 5.2-3.7 7.1-3.7s5.4 4.8 7.1 3.7c1.6-1.1 1.1-6.4-1.2-9.9M8 9H7v1H6V9H5V8h1V7h1v1h1zm5.4.5c0 .5-.4.9-.9.9s-.9-.4-.9-.9s.4-.9.9-.9s.9.4.9.9m1.9-2c0 .5-.4.9-.9.9s-.9-.4-.9-.9s.4-.9.9-.9s.9.4.9.9"/></svg>
+              <p class="text-white text-sm">Ürünler</p>
+            </a>
+          </li>
+          <li class="-mt-16">
+            <a href="" class=""
+              ><div
+                class="bg-gradient-to-b from-[#9B8961] to-white/70 via-[#DFD4B9] p-4 rounded-full border-8 border-[#DFD4B9]"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-9 h-9" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16z"/><path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5"/></g></svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-5 h-5 mb-1 mx-auto" viewBox="0 0 36 36"><path fill="currentColor" d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87" class="clr-i-solid clr-i-solid-path-1"/><path fill="none" d="M0 0h36v36H0z"/></svg>
+              <p class="text-white text-sm">Favoriler</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white mx-auto w-5 h-5 mb-1" viewBox="0 0 24 24"><path fill="currentColor" d="M11.967 1.752c-2.15.01-4.244.695-5.984 1.957a10.234 10.234 0 0 0-.126 16.493c.05.049.107.09.17.12a10.228 10.228 0 0 0 11.95 0a.831.831 0 0 0 .18-.13a10.235 10.235 0 0 0-.172-16.506a10.278 10.278 0 0 0-5.998-1.934zm0 3.76a4.162 4.162 0 0 1 3.878 2.534a4.144 4.144 0 0 1-.882 4.543A4.158 4.158 0 0 1 7.86 9.632a4.147 4.147 0 0 1 1.21-2.898a4.16 4.16 0 0 1 2.897-1.222m4.627 13.92a8.754 8.754 0 0 1-9.245 0a8.094 8.094 0 0 1-1.212-.9a7.126 7.126 0 0 1 2.144-2a7.23 7.23 0 0 1 7.382 0a7.125 7.125 0 0 1 2.143 2c-.375.337-.78.638-1.212.9"/></svg>
+              <p class="text-white text-sm">Profil</p>
+            </a>
+          </li>
+        </ul>
+      </header>
+    <div class="flex flex-col gap-3 pb-28">
+        <div class="image-container2 absolute -z-20">
+            <img class="" src="./view/img/3.png" alt="">
+        </div>
+        <div class="flex items-center gap-3 pt-4 px-5">
+            <div class="flex items-center gap-2">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 7l-5 5l5 5"/></svg></a>
+                <div class="gap-3 py-2 px-3 border border-white rounded-lg w-full">
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-6 h-6" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 1 0 157.09 157.09A157.1 157.1 0 0 0 221.09 64Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+                      <input class="bg-inherit w-full focus:outline-none text-white" placeholder="Ürün Ara.." type="text" name="" id="">
+                    </div>
+                  </div>
+            </div>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="text-white w-6 h-6" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16z"/><path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5"/></g></svg></a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="text-white w-6 h-6" viewBox="0 0 24 24"><path fill="currentColor" d="M18 22q-1.25 0-2.125-.875T15 19q0-.175.025-.363t.075-.337l-7.05-4.1q-.425.375-.95.588T6 15q-1.25 0-2.125-.875T3 12q0-1.25.875-2.125T6 9q.575 0 1.1.213t.95.587l7.05-4.1q-.05-.15-.075-.337T15 5q0-1.25.875-2.125T18 2q1.25 0 2.125.875T21 5q0 1.25-.875 2.125T18 8q-.575 0-1.1-.212t-.95-.588L8.9 11.3q.05.15.075.338T9 12q0 .175-.025.363T8.9 12.7l7.05 4.1q.425-.375.95-.587T18 16q1.25 0 2.125.875T21 19q0 1.25-.875 2.125T18 22m0-16q.425 0 .713-.287T19 5q0-.425-.288-.712T18 4q-.425 0-.712.288T17 5q0 .425.288.713T18 6M6 13q.425 0 .713-.288T7 12q0-.425-.288-.712T6 11q-.425 0-.712.288T5 12q0 .425.288.713T6 13m12 7q.425 0 .713-.288T19 19q0-.425-.288-.712T18 18q-.425 0-.712.288T17 19q0 .425.288.713T18 20m0-1"/></svg></a>
+        </div>
+        <div class="px-5">
+            <img class="w-7/12 rounded-lg" src="./view/img/elmas.png" alt="">
+        </div>
+        <div class="px-5 py-1 space-y-1">
+            <h2 class="text-white font-light text-lg">Mobile Legends</h2>
+            <p class="text-3xl text-white font-semibold">50+22 Elmas</p>
+            <p class="text-xs text-gray-400">Elmayükle ile kurduğu resmi partnerlik ile kolay, hızlı ve güvenilir MLBB Elmas yüklemesi sunar.
+                Saniyeler içinde Mobile Legends Elmas, Twilight Pass & Weekly Diamond Pass satın al. MLBB Oyun User ID ve Zone ID bilgilerini girin, satın almak istediğiniz ürünüs seçin, ödemeyi tamamlayın ve ürününüz saniyeler içinde Mobile Legends hesabınıza yüklensin.</p>
+        </div>
+        <div class="flex items-center gap-4 px-5">
+            <div class="flex -space-x-2">
+                <img class="rounded-full w-8 h-8 ring-2 ring-[#A57F51]" src="./view/img/img3.png" alt="">
+                <img class="rounded-full w-8 h-8 ring-2 ring-[#A57F51]" src="./view/img/img2.png" alt="">
+                <img class="rounded-full w-8 h-8 ring-2 ring-[#A57F51]" src="./view/img/img1.png" alt="">
+            </div>
+            <a href="" class="py-2 px-3 bg-white rounded-full flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-blue-600" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M4.41 12.961a2.5 2.5 0 0 0 1.076.244h5.346a2.5 2.5 0 0 0 2.47-2.114l.626-4.003a2 2 0 0 0-1.976-2.31H8.67V2.422a1.625 1.625 0 0 0-3.044-.794l-2.077 3.71a1.5 1.5 0 0 0-.191.733v5.442a1.5 1.5 0 0 0 .854 1.354l.2.095Zm-3.366-7.44a.996.996 0 0 0-.997.996v5.112a.997.997 0 0 0 .997.997h.496a.5.5 0 0 0 .5-.5V6.02a.5.5 0 0 0-.5-.5h-.496Z" clip-rule="evenodd"/></svg>
+                <p class="text-blue-600 text-sm"><span>+98</span> Beğenme</p>
+            </a>
+        </div>
+        <div class="mx-auto bg-white h-0.5 w-72 rounded-full shadow shadow-white">
+        </div>
+        <div class="px-5 space-y-2">
+            <button class="bg-gradient-to-tr from-[#F9D58E] to-[#E6BE7A] via-[#D5AB6A] py-3 px-2 text-white text-lg font-semibold rounded-lg whitespace-nowrap w-full">
+                Şimdi Al 7.60₺
+              </button>
+            <button class="py-3 px-2 text-white text-lg font-semibold rounded-lg whitespace-nowrap w-full flex items-center justify-center gap-2 border">
+                Sepete Ekle <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M10.464 3.282a2 2 0 0 1 2.964-.12l.108.12L17.469 8h2.985a1.49 1.49 0 0 1 1.484 1.655l-.092.766l-.1.74l-.082.554l-.095.595l-.108.625l-.122.648l-.136.661c-.072.333-.149.667-.232.999a21.018 21.018 0 0 1-.832 2.583l-.221.54l-.214.488l-.202.434l-.094.194l-.249.49c-.32.61-.924.97-1.563 1.022l-.16.006H6.555a1.929 1.929 0 0 1-1.71-1.008l-.232-.45l-.18-.37a20.09 20.09 0 0 1-.095-.205l-.2-.449a21.536 21.536 0 0 1-1.108-3.276a32.366 32.366 0 0 1-.156-.654l-.142-.648l-.127-.634l-.112-.613l-.1-.587l-.087-.554l-.074-.513l-.09-.683l-.066-.556a39.802 39.802 0 0 1-.017-.153a1.488 1.488 0 0 1 1.348-1.64L3.543 8h2.989zM19.883 10H4.113l.062.484l.076.548l.092.604l.108.648c.04.222.081.45.126.682l.143.707c.076.358.16.722.25 1.084a19.532 19.532 0 0 0 1 2.957l.196.441l.182.384l.163.323l.072.138H17.41l.154-.303l.177-.365l.194-.423c.367-.825.787-1.918 1.095-3.152c.125-.5.236-1.008.335-1.507l.14-.738l.12-.709l.053-.339l.095-.637l.077-.57zm-9.897 2.836l.5 3a1 1 0 0 1-1.972.328l-.5-3a1 1 0 1 1 1.972-.328M15.048 12l.116.013A1 1 0 0 1 16 13.048l-.013.116l-.5 3a1 1 0 0 1-1.985-.212l.013-.116l.5-3A1 1 0 0 1 15.048 12M12 4.562L9.135 8h5.73z"/></g></svg>
+              </button>
+              <p class="text-xs text-white text-center">Alışverişleriniz %100 PayTr güvencesi altındadır.</p>
+        </div>
+    </div>
+    <span class="bg-tab hidden"></span>
+</body>
+</html>

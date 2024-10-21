@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giris 2</title>
+
+    <!-- Tailwind CSS Dosyasını Ekledim -->
+    <link href="dist/output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./view/css/style.css" />
+    <link rel="stylesheet" href="./view/css/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="flex flex-col bg-[#050C20] font-['Roboto']">
+    <div class="h-screen">
+        <div class="relative image-container">
+            <img class="w-screen img-height" src="./view/img/2.png" alt="">
+            <img class="absolute -bottom-10 z-[99999]" src="./view/img/logo.png" alt="">
+        </div>
+        <div class="py-6 text-center px-6 flex flex-col items-center gap-10 flex-gap">
+            <h1 class="text-white text-3xl font-bold"> Mobil maceranızı <br> şimdi başlatın</h1>
+               <div class="w-full space-y-2">
+                <!-- Kayıt olmadan devam et butonu -->
+                <button class="py-3 w-full text-white bg-gradient-to-r from-[#AF6E44] to-[#34160B] text-center font-bold rounded-md"
+                    onclick="confirmRedirect()">
+                    Kayıt olmadan devam et
+                </button>
+
+                <!-- Google ile devam et butonu -->
+                <button class="py-3 w-full text-[#027FEE] bg-white text-xs rounded-md flex items-center justify-center gap-3">
+                    <img src="./view/img/google-1.png" alt="">
+                    Google ile devam et
+                </button>
+               </div>
+        </div>
+    </div>
+
+    <!-- Onay mesajı ve yönlendirme için JavaScript -->
+    <script>
+      function confirmRedirect() {
+        var confirmAction = confirm("Kayıt Olmadan Devam Edilsin mi?");
+        if (confirmAction) {
+          window.location.href = "main-menu.html";
+        }
+      }
+    </script>
+</body>
+</html>

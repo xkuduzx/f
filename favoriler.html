@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoriler</title>
+    <link rel="stylesheet" href="./view/css/style.css" />
+    <link rel="stylesheet" href="./view/css/default.css" />
+    <link rel="stylesheet" href="./view/css/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col bg-[#050C20] font-['Roboto']">
+    <header class="fixed bottom-0 w-full bg-[#010101] py-3 px-6 z-[999999]">
+      <ul class="flex items-center justify-between">
+        <li>
+          <a href="main-menu.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-[#AD6108] mx-auto w-5 h-5 mb-1" viewBox="0 0 32 32"><path fill="currentColor" d="M13.895 2.777a3.25 3.25 0 0 1 4.21 0l9.75 8.287A3.25 3.25 0 0 1 29 13.54V26.5a2.5 2.5 0 0 1-2.5 2.5h-4a2.5 2.5 0 0 1-2.5-2.5V20a2 2 0 0 0-1.991-2H13.99A2 2 0 0 0 12 20v6.5A2.5 2.5 0 0 1 9.5 29h-4A2.5 2.5 0 0 1 3 26.5V13.54a3.25 3.25 0 0 1 1.145-2.476z"/></svg>
+            <p class="text-[#AD6108] font-semibold text-sm">Anasayfa</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white mx-auto w-5 h-5 mb-1" viewBox="0 0 20 20"><path fill="currentColor" d="M15.9 5.5C15.3 4.5 14.2 4 13 4H7c-1.2 0-2.3.5-2.9 1.5c-2.3 3.5-2.8 8.8-1.2 9.9c1.6 1.1 5.2-3.7 7.1-3.7s5.4 4.8 7.1 3.7c1.6-1.1 1.1-6.4-1.2-9.9M8 9H7v1H6V9H5V8h1V7h1v1h1zm5.4.5c0 .5-.4.9-.9.9s-.9-.4-.9-.9s.4-.9.9-.9s.9.4.9.9m1.9-2c0 .5-.4.9-.9.9s-.9-.4-.9-.9s.4-.9.9-.9s.9.4.9.9"/></svg>
+            <p class="text-white text-sm">Ürünler</p>
+          </a>
+        </li>
+        <li class="-mt-16">
+          <a href="basket-summary.html" class=""
+            ><div
+              class="bg-gradient-to-b from-[#9B8961] to-white/70 via-[#DFD4B9] p-4 rounded-full border-8 border-[#DFD4B9]"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-9 h-9" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16z"/><path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5"/></g></svg>
+          </a>
+        </li>
+        <li>
+          <a href="favoriler.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-5 h-5 mb-1 mx-auto" viewBox="0 0 36 36"><path fill="currentColor" d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87" class="clr-i-solid clr-i-solid-path-1"/><path fill="none" d="M0 0h36v36H0z"/></svg>
+            <p class="text-white text-sm">Favoriler</p>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-white mx-auto w-5 h-5 mb-1" viewBox="0 0 24 24"><path fill="currentColor" d="M11.967 1.752c-2.15.01-4.244.695-5.984 1.957a10.234 10.234 0 0 0-.126 16.493c.05.049.107.09.17.12a10.228 10.228 0 0 0 11.95 0a.831.831 0 0 0 .18-.13a10.235 10.235 0 0 0-.172-16.506a10.278 10.278 0 0 0-5.998-1.934zm0 3.76a4.162 4.162 0 0 1 3.878 2.534a4.144 4.144 0 0 1-.882 4.543A4.158 4.158 0 0 1 7.86 9.632a4.147 4.147 0 0 1 1.21-2.898a4.16 4.16 0 0 1 2.897-1.222m4.627 13.92a8.754 8.754 0 0 1-9.245 0a8.094 8.094 0 0 1-1.212-.9a7.126 7.126 0 0 1 2.144-2a7.23 7.23 0 0 1 7.382 0a7.125 7.125 0 0 1 2.143 2c-.375.337-.78.638-1.212.9"/></svg>
+            <p class="text-white text-sm">Profil</p>
+          </a>
+        </li>
+      </ul>
+    </header>
+      <div class="pb-28 py-4 px-5">
+        <div class="flex items-center gap-2 w-full">
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 7l-5 5l5 5"/></svg></a>
+            <div class="flex items-center justify-between gap-3 py-2 px-3 border border-[#9E9E9E] rounded-lg w-full">
+                <div class="flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-[#969696] w-6 h-6" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M221.09 64a157.09 157.09 0 1 0 157.09 157.09A157.1 157.1 0 0 0 221.09 64Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/></svg>
+                  <input class="bg-inherit w-full focus:outline-none text-gray-400" placeholder="Ürün Ara.." type="text" name="" id="">
+                </div>
+                <a href="" class="p-0.5 rounded-full bg-gray-500"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-white" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg></a>
+              </div>
+        </div>
+        <div class="space-y-2 pt-4">
+            <div class="flex items-center justify-between rounded-lg p-2 bg-[#010B2D]">
+                <div class="flex items-center gap-2">
+                    <img class="w-4/12 rounded-lg" src="./view/img/Elmas(24).png" alt="">
+                    <div>
+                      <h3 class="text-white font-light text-sm">Mobile Legends</h3>
+                      <p class="text-white text-base font-semibold">24 Elmas</p>
+                      <div class="text-base">
+                        <span class="text-gray-400"><del>25.00$</del></span>
+                        <span class="text-white">20.99₺</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="border border-[#947448] py-2 px-6 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
+                  Sepete Ekle
+                </button>
+            </div>
+            <div class="flex items-center justify-between rounded-lg p-2 bg-[#010B2D]">
+                <div class="flex items-center gap-2">
+                    <img class="w-4/12 rounded-lg" src="./view/img/Elmas(24).png" alt="">
+                    <div>
+                      <h3 class="text-white font-light text-sm">Mobile Legends</h3>
+                      <p class="text-white text-base font-semibold">24 Elmas</p>
+                      <div class="text-base">
+                        <span class="text-gray-400"><del>25.00$</del></span>
+                        <span class="text-white">20.99₺</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="border border-[#947448] py-2 px-6 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
+                  Sepete Ekle
+                </button>
+            </div>
+            <div class="flex items-center justify-between rounded-lg p-2 bg-[#010B2D]">
+                <div class="flex items-center gap-2">
+                    <img class="w-4/12 rounded-lg" src="./view/img/Elmas(24).png" alt="">
+                    <div>
+                      <h3 class="text-white font-light text-sm">Mobile Legends</h3>
+                      <p class="text-white text-base font-semibold">24 Elmas</p>
+                      <div class="text-base">
+                        <span class="text-gray-400"><del>25.00$</del></span>
+                        <span class="text-white">20.99₺</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="border border-[#947448] py-2 px-6 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
+                  Sepete Ekle
+                </button>
+            </div>
+            <div class="flex items-center justify-between rounded-lg p-2 bg-[#010B2D]">
+                <div class="flex items-center gap-2">
+                    <img class="w-4/12 rounded-lg" src="./view/img/Elmas(24).png" alt="">
+                    <div>
+                      <h3 class="text-white font-light text-sm">Mobile Legends</h3>
+                      <p class="text-white text-base font-semibold">24 Elmas</p>
+                      <div class="text-base">
+                        <span class="text-gray-400"><del>25.00$</del></span>
+                        <span class="text-white">20.99₺</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="border border-[#947448] py-2 px-6 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
+                  Sepete Ekle
+                </button>
+            </div>
+            <div class="flex items-center justify-between rounded-lg p-2 bg-[#010B2D]">
+                <div class="flex items-center gap-2">
+                    <img class="w-4/12 rounded-lg" src="./view/img/Elmas(24).png" alt="">
+                    <div>
+                      <h3 class="text-white font-light text-sm">Mobile Legends</h3>
+                      <p class="text-white text-base font-semibold">24 Elmas</p>
+                      <div class="text-base">
+                        <span class="text-gray-400"><del>25.00$</del></span>
+                        <span class="text-white">20.99₺</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="border border-[#947448] py-2 px-6 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
+                  Sepete Ekle
+                </button>
+            </div>
+            <div class="flex items-center justify-between rounded-lg p-2 bg-[#010B2D]">
+                <div class="flex items-center gap-2">
+                    <img class="w-4/12 rounded-lg" src="./view/img/Elmas(24).png" alt="">
+                    <div>
+                      <h3 class="text-white font-light text-sm">Mobile Legends</h3>
+                      <p class="text-white text-base font-semibold">24 Elmas</p>
+                      <div class="text-base">
+                        <span class="text-gray-400"><del>25.00$</del></span>
+                        <span class="text-white">20.99₺</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="border border-[#947448] py-2 px-6 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
+                  Sepete Ekle
+                </button>
+            </div>
+            <div class="flex items-center justify-between rounded-lg p-2 bg-[#010B2D]">
+                <div class="flex items-center gap-2">
+                    <img class="w-4/12 rounded-lg" src="./view/img/Elmas(24).png" alt="">
+                    <div>
+                      <h3 class="text-white font-light text-sm">Mobile Legends</h3>
+                      <p class="text-white text-base font-semibold">24 Elmas</p>
+                      <div class="text-base">
+                        <span class="text-gray-400"><del>25.00$</del></span>
+                        <span class="text-white">20.99₺</span>
+                      </div>
+                    </div>
+                </div>
+                <button class="border border-[#947448] py-2 px-6 text-white text-sm font-semibold rounded-lg whitespace-nowrap">
+                  Sepete Ekle
+                </button>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

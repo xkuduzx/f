@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./node_modules/tailwindcss/tailwind.css -o ./view/css/style.css --watch --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+  "name": "f",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
