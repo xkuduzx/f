@@ -40,11 +40,11 @@ $(document).ready(function () {
 
 // Swiper JS kurulumu
 var swiper = new Swiper('.swiper-container', {
-  direction: 'horizontal', // yatay kaydırma yönü
-  loop: true, // sonsuz döngü
+  direction: 'horizontal',
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true, // sayfa numaraları tıklanabilir
+    clickable: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
